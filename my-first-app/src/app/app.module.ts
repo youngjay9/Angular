@@ -3,16 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { ServerComponent } from './server/server.component';
+import { WarningAlertComponent } from './waring-alert/warning-alert.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ServerComponent,
+    WarningAlertComponent
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, ServerComponent, WarningAlertComponent]
 })
 export class AppModule { }
