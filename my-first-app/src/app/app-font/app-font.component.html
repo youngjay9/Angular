@@ -1,0 +1,6 @@
+<h2>app-font component</h2>
+<p>constructor param: color_init:{{get_color}}, param: size:{{sizeParam}}</p>
+
+<button type="button" [disabled]="sizeParam===20" (click)="onSetFontSize(1)">增加 1 pt</button>
+
+<button type="button" [disabled]="sizeParam <= 0" (click)="onSetFontSize(-1)">剪少 1 pt</button>

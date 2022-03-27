@@ -6,13 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-title';
-  name = 'jay';
-
-  fontSize = 12;
-
-  onSizeParamChange(sizeParam: number) {
-    this.fontSize = sizeParam;
-  }
-
+  title = 'intro-ng-project';
 }

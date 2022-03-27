@@ -1,3 +1,7 @@
+<h1>server component area</h1>
+
+<input type="text" class="form-control" [(ngModel)]="serverName">
+
 <button class="btn btn-primary" [disabled]="disableNewServer" (click)="onCreateServer()">
     Add server
 </button>
@@ -5,3 +9,33 @@
 <p>server with ID: {{serverId}} is {{getServerStatus()}}</p>
 
 <p>{{serverCreationStatus}}</p>
+
+
+<br>
+<br>
+
+<input type="text" class="form-control" (input)="onUpdateServerName($event)">
+<p>serverName: {{serverName}}</p>
+
+<br>
+<br>
+Enter UserName: <input type="text" class="form-control" [(ngModel)]="userName">
+<button class="btn btn-primary" [disabled]="!userName" (click)="resetUserName()">
+    reset userName
+</button>
+
+<p>UserName: {{userName}}</p>
+
+<br>
+<br>
+
+<button class="btn btn-primary" (click)="displayDetails()">
+    Display Details
+</button>
+
+<p *ngIf="showSecrete"> It's the details </p>
+
+<div *ngFor="let n of btnClickNums" [ngStyle]="{backgroundColor: n>=5 ?'blue': 'transparent'}"
+    [ngClass]="{'white-text': n >= 5}">
+    {{n}}
+</div>

@@ -4,19 +4,22 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
-import { WarningAlertComponent } from './waring-alert/warning-alert.component';
+import { Server2Component } from './server2/server2.component';
+import { AppFontComponent } from './app-font/app-font.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ServerComponent,
-    WarningAlertComponent
-  ],
   imports: [
     BrowserModule,
     FormsModule
   ],
+  // 定義 AppModule 內擁有的 component 清單
+  declarations: [
+    AppComponent,
+    ServerComponent,
+    Server2Component,
+    AppFontComponent
+  ],
   providers: [],
-  bootstrap: [AppComponent, ServerComponent, WarningAlertComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

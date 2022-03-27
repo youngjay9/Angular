@@ -1,0 +1,11 @@
+<h1>server2 component area</h1>
+
+<button type="button" (click)="onSetFontSize(1)" [disabled]="fontSize===16">
+    增加 1 pt
+</button>
+
+<button type="button" (click)="onSetFontSize(-1)" [disabled]="fontSize===0">
+    減少 1 pt
+</button>
+
+<p [class]="fontClass">目前文字尺寸:{{fontSize}}</p>
